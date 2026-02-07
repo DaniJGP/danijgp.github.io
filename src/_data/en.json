@@ -1,0 +1,100 @@
+{
+  "head": {
+    "title": "Daniela Guardia: Full Stack Developer"
+  },
+  "nav": {
+    "brand": "Daniela Guardia",
+    "projects": "Projects",
+    "skills": "Skills",
+    "cv": "CV",
+    "about": "About",
+    "aria": {
+      "toggle_theme": "Toggle dark/light theme",
+      "toggle_menu_icon": "Toggle menu icon"
+    }
+  },
+  "hero": {
+    "pre": "👋 Hey! I'm",
+    "name": "Daniela Guardia",
+    "title": "Full Stack Developer",
+    "desc": "I'm passionate about building accessible, modern web applications that connect everyone ✨",
+    "links": {
+      "github_aria": "Github profile",
+      "codepen_aria": "Codepen showcase",
+      "linkedin_aria": "Linkedin profile"
+    },
+    "scroll_cta": "Scroll to projects!"
+  },
+  "portfolio": {
+    "title": "My projects"
+  },
+  "skills": {
+    "title": "My Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "languages": "Languages",
+    "technologies": "Technologies"
+  },
+  "cv": {
+    "name": "Daniela Guardia",
+    "download_pdf": "PDF",
+    "education": "Education",
+    "experience": "Experience",
+    "languages": "Language Proficiency",
+    "education_list": [
+      {
+        "title": "Full Stack Javascript",
+        "date": "(2024 - 2025)",
+        "institution": "Academia Desafío Latam",
+        "desc": "Graduated from intensive bootcamp program focused on modern web application development, covering frontend technologies like HTML, CSS, JavaScript, React, and backend with Node.js, Express, and databases like PostgreSQL."
+      },
+      {
+        "title": "CS50: Introduction to Computer Science",
+        "date": "(2023 - 2024)",
+        "institution": "Harvard University (Online)",
+        "desc": "Gained a solid foundation in core computer science principles, including algorithms and data structures, applying them through hands-on projects in C, Python, and web technologies. Developed strong problem-solving skills essential for building efficient web applications."
+      },
+      {
+        "title": "Associate's Degree in English",
+        "date": "(2015 - 2017)",
+        "institution": "Pontifical Catholic University of Valparaíso",
+        "desc": "A comprehensive program focused on achieving advanced-level English language skills. The curriculum focused on building proficiency in key areas such as reading comprehension, active listening, written communication, and oral expression. The program aimed to provide a strong understanding of English language structure and usage."
+      }
+    ],
+    "experience_list": [
+      {
+        "title": "English-Spanish Translator",
+        "date": "(2018 - 2022)",
+        "institution": "Freelance",
+        "desc": "Operated as an independent freelance translator, managing multiple translation projects from start to finish. Learned to work with translation assistance software, developing the organizational skills necessary to deliver high-quality translation work on time."
+      },
+      {
+        "title": "Volunteer Translator",
+        "date": "(2017 - 2018)",
+        "institution": "Global Voices ES",
+        "desc": "Contributed to an international community of volunteer writers, translators and human rights activists dedicated to fostering understanding accross cultures and connecting people across borders. Gained experience translating insightful articles and polished my translation skills working closely with senior translators and editors."
+      }
+    ],
+    "lang_list": [
+      { "icon": "emojione--flag-for-chile", "label": "Spanish: Native" },
+      {
+        "icon": "emojione--flag-for-united-states",
+        "label": "English: Fluent"
+      },
+      { "icon": "emojione--flag-for-japan", "label": "Japanese: Intermediate" }
+    ]
+  },
+  "about": {
+    "title": "About me",
+    "p1": "Welcome! I'm Daniela, a full-stack web developer with a translation background, always eager to learn new technologies and expand my skillset.",
+    "p2": "I'm an optimist at heart, exploring ways to build applications that are not only technically sound, but also broadly accessible.",
+    "p3": "I'm currently learning the ins and outs of CSS animations, accessibility and the use of SVG sprites for icons; you'll be able to read more about this in my blog, coming soon!",
+    "p4": "When not coding, you'd probably find me immersing myself in Japanese material to prepare for the JLPT or learning and playing riffs on my electric guitar. I'm also a lover of strategy games and an avid Formula 1 fanatic."
+  },
+  "footer": {
+    "github_aria": "Github profile",
+    "linkedin_aria": "Linkedin profile",
+    "email_aria": "Email me",
+    "text": "© 2026, Daniela Guardia. Built with HTML, CSS, and JavaScript."
+  }
+}

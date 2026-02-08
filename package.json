@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/DaniJGP/danijgp.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/DaniJGP/danijgp.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaniJGP/danijgp.github.io.git"
+  },
+  "license": "MIT",
+  "author": "Daniela Guardia",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build" : "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

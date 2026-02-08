@@ -1,0 +1,52 @@
+[
+  {
+    "img_src": "/assets/img/portfolio-d1.jpg",
+    "github": "https://github.com/DaniJGP/portfolio",
+    "live": "https://danielajgp.github.io",
+    "en": {
+      "title": "Portfolio Website",
+      "desc": "My personal playground, and the very website you're on! Built from the ground up using only HTML, CSS and vanilla JavaScript, it has taught me robust accessibility features, SVG sprites for scalable icon use, subtle CSS animations.",
+      "skills": ["HTML", "CSS", "JavaScript", "Accessibility", "SVG"],
+      "img_alt": "Screenshot of the home section of this portfolio website"
+    },
+    "es": {
+      "title": "Sitio Web Personal",
+      "desc": "Mi espacio personal, y el mismo sitio web en el que estás navegando. Construido desde cero usando solo HTML, CSS y JavaScript puro, me ha enseñado a implementar robustas características de accesibilidad, sprites SVG para el uso escalable de íconos, sutiles animaciones CSS.",
+      "skills": ["HTML", "CSS", "JavaScript", "Accesibilidad", "SVG"],
+      "img_alt": "Captura de pantalla de la sección de inicio de este sitio web personal"
+    }
+  },
+  {
+    "img_src": "/assets/img/galeria-d1.jpg",
+    "github": "https://github.com/DaniJGP/galeria-arte",
+    "live": "https://galeria-arte.onrender.com/",
+    "en": {
+      "title": "Galería Arte",
+      "desc": "A full-stack art gallery e-commerce web application. It features secure user registration, JWT-secured log-in sessions, shopping cart and buy order processing. It also includes an admin panel for inventory, user order management.",
+      "collab": "Built in collaboration with <a href=\"https://joacozun.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">@joacozun</a>.",
+      "skills": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Full-Stack Development",
+        "JWT Authentication"
+      ],
+      "img_alt": "A website titled Galería Arte, showing colorful art pieces in a grid with their respective names and prices"
+    },
+    "es": {
+      "title": "Galería Arte",
+      "desc": "Aplicación web e-commerce de galería de arte full-stack. Incluye registro seguro de usuarios, sesiones protegidas con JWT, carrito de compras y procesamiento de pedidos. También cuenta con panel de administración para inventario y gestión de pedidos de usuarios.",
+      "collab": "Desarrollado en colaboración con <a href=\"https://joacozun.github.io/\" target=\"_blank\" rel=\"noopener noreferrer\">@joacozun</a>.",
+      "skills": [
+        "React",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Desarrollo Full-Stack",
+        "Autenticación JWT"
+      ],
+      "img_alt": "Un sitio web titulado Galería Arte, mostrando obras de arte coloridas en una cuadrícula con sus respectivos nombres y precios"
+    }
+  }
+]

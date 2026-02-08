@@ -1,0 +1,215 @@
+---
+title: "Daniela Guardia : Full Stack Developer"
+layout: "base.njk"
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'en' %}/{% else %}/{{ lang }}/{% endif %}index.html"
+---
+
+{% include "hero-header.njk" %}
+
+<main>
+  <section id="portfolio" class="section">
+    <h2 class="animate slide-from-left delay-s">{{ "portfolio.title" | localize }}</h2>
+    <div class="project-grid">
+      {% for project in projects %}
+        {% include "project-card.njk" %}
+      {% endfor %}
+      </div>
+
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="animate slide-from-left delay-s">My Skills</h2>
+    <div class="skills-grid">
+      <div id="frontend-section" class="skill-section">
+        <h3 class="animate slide-from-left delay-s">Frontend</h3>
+        <div class="skill-card-container vertical animate slide-from-left delay-m">
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-html"></use>
+            </svg>
+            <p>HTML</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-css"></use>
+            </svg>
+            <p>CSS</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-bootstrap"></use>
+            </svg>
+            <p>Bootstrap</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-react"></use>
+            </svg>
+            <p>React</p>
+          </div>
+        </div>
+      </div>
+      <div id="backend-section" class="skill-section">
+        <h3 class="animate slide-from-left delay-s">Backend</h3>
+        <div class="skill-card-container vertical animate slide-from-left delay-m">
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-nodejs"></use>
+            </svg>
+            <p>Node.js</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-express"></use>
+            </svg>
+            <p>Express</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-flask"></use>
+            </svg>
+            <p>Flask</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-postgresql"></use>
+            </svg>
+            <p>PostgreSQL</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-sqlite"></use>
+            </svg>
+            <p>SQLite</p>
+          </div>
+        </div>
+      </div>
+      <div id="languages-section" class="skill-section">
+        <h3 class="animate slide-from-right delay-s">Languages</h3>
+        <div class="skill-card-container animate slide-from-right delay-m">
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-javascript"></use>
+            </svg>
+            <p>Javascript</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-typescript"></use>
+            </svg>
+            <p>Typescript</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-python"></use>
+            </svg>
+            <p>Python</p>
+          </div>
+        </div>
+      </div>
+      <div id="other-section" class="skill-section">
+        <h3 class="animate slide-from-right delay-s">Technologies</h3>
+        <div class="skill-card-container animate slide-from-right delay-m">
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-git"></use>
+            </svg>
+            <p>Git</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-linux"></use>
+            </svg>
+            <p>Linux</p>
+          </div>
+          <div class="skill-card">
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#icon-bash"></use>
+            </svg>
+            <p>bash</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" class="section">
+    <div class="cv-page animate slide-from-bottom delay-m">
+      <div class="cv-main-header">
+        <h2>{{ "cv.name" | localize }}</h2>
+        <span></span>
+        <a href="#" download="Daniela_Guardia_CV.pdf" class="cv-download-button">
+          <span>{{ "cv.download_pdf" | localize }}</span>
+          <svg aria-hidden="true">
+            <use href="/assets/icons/icons.svg#material-symbols--download"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="cv-category">
+        <h3>{{ "cv.education" | localize }}</h3>
+        <ul>
+          {% for item in "cv.education_list" | localize %}
+          <li>
+            <div class="cv-item-header">
+              <span class="cv-title">{{ item.title }}</span>
+              <span class="cv-date">{{ item.date }}</span>
+            </div>
+            <div class="cv-institution">{{ item.institution }}</div>
+            <div class="cv-description">
+              {{ item.desc }}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="cv-category">
+        <h3>{{ "cv.experience" | localize }}</h3>
+        <ul>
+          {% for item in "cv.experience_list" | localize %}
+          <li>
+            <div class="cv-item-header">
+              <span class="cv-title">{{ item.title }}</span>
+              <span class="cv-date">{{ item.date }}</span>
+            </div>
+            <div class="cv-institution">{{ item.institution }}</div>
+            <div class="cv-description">
+              {{ item.desc }}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="cv-category">
+        <h3>{{ "cv.languages" | localize }}</h3>
+        <ul class="cv-lang-list">
+          {% for item in "cv.lang_list" | localize %}
+          <li>
+            <svg aria-hidden="true">
+              <use href="/assets/icons/icons.svg#{{ item.icon }}"></use>
+            </svg>
+            <span>{{ item.label }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutme" class="section">
+    <h2 class="animate slide-from-bottom delay-m">{{ "about.title" | localize }}</h2>
+    <div class="aboutme-body animate slide-from-bottom delay-m">
+      <p>{{ "about.p1" | localize }}</p>
+      <p>{{ "about.p2" | localize }}</p>
+      <p>{{ "about.p3" | localize }}</p>
+      <p>{{ "about.p4" | localize }}</p>
+    </div>
+  </section>
+
+  <script src="/assets/js/main.js" type="module"></script>
+</main>

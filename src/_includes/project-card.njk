@@ -1,0 +1,28 @@
+<article class="project-card animate slide-from-left delay-s">
+    <div class="project-image-container"><img src="{{ project.img_src }}"
+            alt="{{ project[lang].img_alt }}"></div>
+    <div class="project-content">
+        <h3 class="project-title">{{ project[lang].title }}</h3>
+        <div class="project-desc">
+            <p>{{ project[lang].desc }}</p>
+        </div>
+        <div class="project-skills">
+        {% for skill in project[lang].skills %}
+             <span class="skill-tag">{{ skill }}</span>
+        {% endfor %}
+        </div>
+        <footer class="project-links">
+            <a href="{{ project.live }}" target="_blank" rel="noopener" class="project-link-button">
+                <svg class="project-link-icon" aria-hidden="true">
+                    <use href="/assets/icons/icons.svg#ic--outline-play-circle" role="img"></use>
+                </svg>
+                <span>DEMO</span>
+            </a>
+            <a href="{{ project.github }}" target="_blank" rel="noopener" class="project-link-button">
+                <svg class="project-link-icon" aria-hidden="true">
+                    <use href="/assets/icons/icons.svg#mdi--github" role="img"></use>
+                </svg>
+                <span>GITHUB</span></a>
+        </footer>
+    </div>
+</article>

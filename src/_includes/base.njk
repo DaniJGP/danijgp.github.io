@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default("en") }}">
+
+{% include "head.njk" %}
+
+<body>
+    {% include "navbar.njk" %}
+    {{ content | safe }}
+    {% include "footer.njk" %}
+    <script src="/assets/js/main.js" type="module"></script>
+</body>
+
+</html>

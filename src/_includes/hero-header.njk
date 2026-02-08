@@ -1,0 +1,36 @@
+<header id="hero" class="section">
+
+    <div class="header-content">
+        <h1 class="hero-heading-group">
+            <span class="header-pre animate slide-from-left">{{ "hero.pre" | localize }}</span>
+            <span class="header-name animate slide-from-left delay-s">{{ "hero.name" | localize }}</span>
+            <span class="header-title animate slide-from-left delay-m">{{ "hero.title" | localize }}</span>
+        </h1>
+        <p class="header-desc animate slide-from-left delay-l header-desc">
+            {{ "hero.desc" | localize }}</p>
+        <p class="header-links">
+            <a href="https://github.com/DaniJGP/" target="_blank" aria-label="{{ "hero.links.github_aria" | localize }}">
+                <svg class="hero-svg animate rotate-icon delay-s">
+                    <use href="/assets/icons/icons.svg#skill-icons--github-dark"></use>
+                </svg>
+            </a>
+            <a href="https://codepen.io/DaniJGP" target="_blank" aria-label="{{ "hero.links.codepen_aria" | localize }}">
+                <svg class="hero-svg animate rotate-icon delay-m">
+                    <use href="/assets/icons/icons.svg#skill-icons--codepen-dark"></use>
+                </svg></a>
+            <a href="https://www.linkedin.com/in/daniela-guardia-3425bb317/" target="_blank"
+                aria-label="{{ "hero.links.linkedin_aria" | localize }}">
+                <svg class="hero-svg animate rotate-icon delay-l">
+                    <use href="/assets/icons/icons.svg#skill-icons--linkedin"></use>
+                </svg>
+            </a>
+        </p>
+    </div>
+    <a href="#portfolio" class="scroll-button animate fade-bounce">
+        <p class="animate slide-from-bottom delay-xl">{{ "hero.scroll_cta" | localize }}</p>
+        <svg aria-hidden="true" class="scroll-arrow">
+            <use href="/assets/icons/icons.svg#material-symbols--arrow-downward-rounded"></use>
+        </svg>
+    </a>
+
+</header>

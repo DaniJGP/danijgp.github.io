@@ -130,6 +130,8 @@ button {
   --shadow-color: var(--white-shadow);
 }
 
+/* Generic tag selectors */
+
 html {
   scroll-behavior: smooth;
   overflow: auto;
@@ -257,9 +259,9 @@ h3 {
   width: 100%;
 }
 
-/* Styling by section*/
+/* Landing page section styling */
 
-/* Header */
+/* Hero Header */
 
 #hero {
   min-height: 100svh;
@@ -337,7 +339,7 @@ h3 {
   flex: 1;
 }
 
-/* Portfolio */
+/* Portfolio section */
 
 #portfolio {
   text-align: center;
@@ -483,7 +485,7 @@ h3 {
   gap: var(--spacing-m);
 }
 
-/* Skills */
+/* Skills section */
 
 #skills {
   background-color: var(--background-color-primary);
@@ -647,6 +649,14 @@ h3 {
     width: 2em;
   }
 }
+
+/* Blog section */
+
+#blog {
+  background-color: var(--background-color-secondary);
+}
+
+
 /* About me section */
 
 #aboutme {
@@ -697,6 +707,11 @@ h3 {
   &:hover {
     color: var(--accent-color);
   }
+}
+
+/* Padding for fixed navbar */
+.navbar-padding {
+  padding-top: var(--navbar-height);
 }
 
 /* Viewport media queries */

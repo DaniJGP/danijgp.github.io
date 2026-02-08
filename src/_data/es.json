@@ -17,7 +17,7 @@
     "pre": "👋 ¡Hola! Soy",
     "name": "Daniela Guardia",
     "title": "Desarrolladora Full Stack",
-    "desc": "Me apasiona crear aplicaciones web accesibles y modernas que conecten a todas las personas ✨",
+    "desc": "Me apasiona crear aplicaciones web accesibles y modernas que conecten a las personas ✨",
     "links": {
       "github_aria": "Perfil de Github",
       "codepen_aria": "Muestra en Codepen",
@@ -46,7 +46,7 @@
           "title": "Full Stack Javascript",
           "date": "(2024 - 2025)",
           "institution": "Academia Desafío Latam",
-          "desc": "Egresada de bootcamp intensivo enfocado en desarrollo moderno de aplicaciones web, cubriendo tecnologías frontend como HTML, CSS, JavaScript, React y backend con Node.js, Express y bases de datos como PostgreSQL."
+          "desc": "Completé un programa de especialización centrado en técnicas y tecnologías modernas de desarrollo web con un enfoque de aprendizaje práctico basado en la realización de proyectos."
         },
         {
           "title": "CS50: Introducción a las Ciencias de la Computación",
@@ -58,7 +58,7 @@
           "title": "Bachiller en Lengua Inglesa",
           "date": "(2015 - 2017)",
           "institution": "Pontificia Universidad Católica de Valparaíso",
-          "desc": "Programa integral enfocado en alcanzar un nivel avanzado de inglés. El plan de estudios se centró en desarrollar competencias en comprensión lectora, escucha activa, comunicación escrita y expresión oral, así como en la estructura y uso del idioma inglés."
+          "desc": "Programa integral enfocado en lograr un nivel avanzado de lectura, comprensión oral, escritura y expresión oral en lengua inglesa."
         }
       ],
       "experience_list": [
@@ -86,15 +86,15 @@
     },
     "about": {
       "title": "Sobre mí",
-      "p1": "¡Bienvenida! Soy Daniela, desarrolladora web full‑stack con formación en traducción, siempre buscando aprender nuevas tecnologías.",
+      "p1": "¡Te doy la bienvenida! Soy Daniela, desarrolladora web full‑stack con formación en traducción, siempre buscando aprender nuevas tecnologías.",
       "p2": "Soy optimista y busco crear aplicaciones técnicamente sólidas y accesibles para todas las personas.",
       "p3": "Actualmente estudio animaciones CSS, accesibilidad y sprites SVG; pronto publicaré más en mi blog.",
-      "p4": "Cuando no programo, estudio japonés para el JLPT, toco guitarra eléctrica y me apasionan los juegos de estrategia y la Fórmula 1."
+      "p4": "Cuando no estoy programando, dedico mi tiempo a estudiar japonés, tocar guitarra eléctrica y me apasionan los juegos de estrategia y la Fórmula 1."
     },
   "footer": {
     "github_aria": "Perfil de Github",
     "linkedin_aria": "Perfil de Linkedin",
     "email_aria": "Envíame un correo",
-    "text": "© 2026, Daniela Guardia. Construido con HTML, CSS y JavaScript."
+    "text": "© 2026, Daniela Guardia. Construido con 11ty."
   }
 }

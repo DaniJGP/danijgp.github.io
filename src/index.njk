@@ -1,7 +1,11 @@
 ---
 title: "Daniela Guardia : Full Stack Developer"
 layout: "base.njk"
-lang: "en"
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'en' %}/{% else %}/{{ lang }}/{% endif %}index.html"
 ---
 
 {% include "hero-header.njk" %}
@@ -13,80 +17,6 @@ lang: "en"
       {% for project in projects %}
         {% include "project-card.njk" %}
       {% endfor %}
-
-      {# <article class="project-card animate slide-from-left delay-s">
-        <div class="project-image-container"><img src="/assets/img/portfolio-d1.jpg"
-            alt="Screenshot of the home section of this portfolio website"></div>
-        <div class="project-content">
-          <h3 class="project-title">Portfolio Website</h3>
-          <div class="project-desc">
-            <p>My personal playground, and the very website you're on! Built from the ground up using only HTML, CSS
-              and
-              vanilla JavaScript, it has taught me robust accessibility features, SVG sprites
-              for scalable icon use, subtle CSS animations.</p>
-            </p>
-          </div>
-          <div class="project-skills">
-            <span class="skill-tag">HTML</span>
-            <span class="skill-tag">CSS</span>
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Accessibility</span>
-            <span class="skill-tag">SVG</span>
-          </div>
-          <footer class="project-links">
-            <a href="#" target="_blank" rel="noopener" class="project-link-button">
-              <svg class="project-link-icon" aria-hidden="true">
-                <use href="/assets/icons/icons.svg#ic--outline-play-circle" role="img"></use>
-              </svg>
-              <span>DEMO</span>
-            </a>
-            <a href="https://github.com/DaniJGP/portfolio" target="_blank" rel="noopener" class="project-link-button">
-              <svg class="project-link-icon" aria-hidden="true">
-                <use href="/assets/icons/icons.svg#mdi--github" role="img"></use>
-              </svg>
-              <span>GITHUB</span></a>
-          </footer>
-        </div>
-      </article>
-
-      <article class="project-card animate slide-from-left delay-m">
-
-        <div class="project-image-container"><img src="/assets/img/galeria-d1.jpg"
-            alt="A website titled Galería Arte, showing colorful art pieces in a grid with their respective names and prices">
-        </div>
-        <div class="project-content">
-          <h3 class="project-title">Galería Arte</h3>
-          <div class="project-desc">
-            <p>A full-stack art gallery e-commerce web application. It features secure user registration, JWT-secured
-              log-in sessions, shopping cart and buy order processing. It also includes an
-              admin panel for inventory, user order management.</p>
-            <p>Built in collaboration with <a href="https://joacozun.github.io/" target="_blank"
-                rel="noopener noreferrer">@joacozun</a>.</p>
-          </div>
-          <div class="project-skills">
-            <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">Express.js</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Full-Stack Development</span>
-            <span class="skill-tag">JWT Authentication</span>
-          </div>
-          <footer class="project-links">
-            <a href="https://galeria-arte-82xx.onrender.com/" target="_blank" rel="noopener"
-              class="project-link-button">
-              <svg class="project-link-icon" aria-hidden="true">
-                <use href="/assets/icons/icons.svg#ic--outline-play-circle" role="img"></use>
-              </svg>
-              <span>DEMO</span>
-            </a>
-            <a href="https://github.com/DaniJGP/galeria-arte" target="_blank" rel="noopener"
-              class="project-link-button"> <svg class="project-link-icon" aria-hidden="true">
-                <use href="/assets/icons/icons.svg#mdi--github"></use>
-              </svg>
-              <span>GITHUB</span></a>
-          </footer>
-        </div>
-      </article> #}
       </div>
 
   </section>

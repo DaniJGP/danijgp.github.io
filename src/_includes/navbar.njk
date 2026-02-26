@@ -12,18 +12,25 @@
             </div>
         </div>
         <div class="nav-utils">
-            <button type="button" class="navbar-darkmode-toggle" id="navThemeToggler"
-                aria-label="{{ "nav.aria.toggle_theme" | localize }}">
+            <button type="button" class="navbar-darkmode-toggle" id="navThemeToggler" aria-label="{{ "
+                nav.aria.toggle_theme" | localize }}">
                 <svg aria-hidden="true">
                     <use href="/assets/icons/icons.svg#mdi--white-balance-sunny"> </use>
                 </svg>
             </button>
             <button type="button" class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation"
                 aria-controls="#navNavigation" id="navToggler">
-                <svg aria-label="{{ "nav.aria.toggle_menu_icon" | localize }}">
+                <svg aria-label="{{ " nav.aria.toggle_menu_icon" | localize }}">
                     <use href="/assets/icons/icons.svg#ic--baseline-menu"></use>
                 </svg>
             </button>
+            <a href="{{ "nav.switcher.targetUrl" | localize }}" 
+               class="nav-lang-switcher" 
+               aria-label="{{ "nav.switcher.aria" | localize }}" 
+               hreflang="{{ "nav.switcher.targetLang" | localize }}"
+               rel="alternate">
+                {{ "nav.switcher.label" | localize }}
+            </a>
         </div>
     </div>
 </nav>

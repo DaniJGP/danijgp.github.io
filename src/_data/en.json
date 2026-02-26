@@ -8,6 +8,12 @@
     "skills": "Skills",
     "cv": "CV",
     "about": "About",
+    "switcher": {
+      "label": "Español",
+      "aria": "Cambiar a español",
+      "targetUrl": "/es/",
+      "targetLang": "es"
+    },
     "aria": {
       "toggle_theme": "Toggle dark/light theme",
       "toggle_menu_icon": "Toggle menu icon"

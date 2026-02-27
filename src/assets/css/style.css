@@ -261,6 +261,7 @@ h3 {
   order: 1;
   font-size: var(--step--1);
   text-decoration: underline;
+  color: var(--text-color-secondary);
 }
 
 .nav-lang-switcher:hover {

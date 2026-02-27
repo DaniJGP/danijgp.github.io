@@ -99,5 +99,38 @@ navThemeToggler.addEventListener('click', () => {
   setTheme(newTheme);
 });
 
+// Language detection and setting
+
+const SUPPORTED_LANGS = ['en', 'es'];
+const DEFAULT_LANG = 'en';
+// const userLang = navigator.language?.split('-')[0];
+// const langToUse = SUPPORTED_LANGS.includes(userLang) ? userLang : DEFAULT_LANG;
+
+function getLanguage() {
+    const storedLang = localStorage.getItem('language');
+
+    if (!storedLang) {
+        const userLang = navigator.language?.split('-')[0];
+        return SUPPORTED_LANGS.includes(userLang) ? userLang : DEFAULT_LANG;
+    }
+    return SUPPORTED_LANGS.includes(storedLang)? storedLang : DEFAULT_LANG;
+}
+
+function setLanguage(lang) {
+    localStorage.setItem('language', lang);
+}
+
+// window.addEventListener('DOMContentLoaded', () => {
+//     const lang = getLanguage();
+//     setLanguage(lang);
+//     document.documentElement.setAttribute('lang', lang);
+// })
+
+const langSwitcher = document.getElementById('langSwitcher');
+langSwitcher.addEventListener('click', (e) => {
+    const siteLang = document.documentElement.getAttribute('lang');
+    const newLang = siteLang === 'en' ? 'es' : 'en';
+    setLanguage(newLang);
+})
 
 

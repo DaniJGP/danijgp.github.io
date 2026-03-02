@@ -77,34 +77,37 @@ root.style.setProperty('--footer-height', `${footer.offsetHeight}px`);
 // Theme toggling
 
 function getUserTheme() {
-    const storedTheme = localStorage.getItem('theme');
-    if (!storedTheme) {
+    const userTheme = localStorage.getItem('theme');
+    if (!userTheme) {
         return window.matchMedia('(prefers-color-scheme: dark)').matches
             ? 'dark'
             : 'light';
     }
-    return storedTheme;
+    return userTheme;
 }
 
-function setTheme(theme) {
+function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
+}
+
+function saveTheme(theme) {
     localStorage.setItem('theme', theme);
 }
 
-setTheme(getUserTheme());
 
 navThemeToggler.addEventListener('click', () => {
   const currentTheme = document.documentElement.getAttribute('data-theme');
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-  setTheme(newTheme);
+  applyTheme(newTheme);
+  saveTheme(newTheme);
 });
+
+applyTheme(getUserTheme());
 
 // Language detection and setting
 
 const SUPPORTED_LANGS = ['en', 'es'];
 const DEFAULT_LANG = 'en';
-// const userLang = navigator.language?.split('-')[0];
-// const langToUse = SUPPORTED_LANGS.includes(userLang) ? userLang : DEFAULT_LANG;
 
 function getLanguage() {
     const storedLang = localStorage.getItem('language');
@@ -120,16 +123,10 @@ function setLanguage(lang) {
     localStorage.setItem('language', lang);
 }
 
-// window.addEventListener('DOMContentLoaded', () => {
-//     const lang = getLanguage();
-//     setLanguage(lang);
-//     document.documentElement.setAttribute('lang', lang);
-// })
-
 const langSwitcher = document.getElementById('langSwitcher');
 langSwitcher.addEventListener('click', (e) => {
-    const siteLang = document.documentElement.getAttribute('lang');
-    const newLang = siteLang === 'en' ? 'es' : 'en';
+    const currentLang = document.documentElement.getAttribute('lang');
+    const newLang = currentLang === 'en' ? 'es' : 'en';
     setLanguage(newLang);
 })
 

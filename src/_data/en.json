@@ -8,6 +8,12 @@
     "skills": "Skills",
     "cv": "CV",
     "about": "About",
+    "switcher": {
+      "label": "Español",
+      "aria": "Cambiar a español",
+      "targetUrl": "/es/",
+      "targetLang": "es"
+    },
     "aria": {
       "toggle_theme": "Toggle dark/light theme",
       "toggle_menu_icon": "Toggle menu icon"
@@ -96,5 +102,10 @@
     "linkedin_aria": "Linkedin profile",
     "email_aria": "Email me",
     "text": "© 2026, Daniela Guardia. Built with 11ty."
+  },
+  "banner": {
+    "text": "Este sitio web también está disponible en español",
+    "link": "Cambiar",
+    "close": "Cerrar banner"
   }
 }

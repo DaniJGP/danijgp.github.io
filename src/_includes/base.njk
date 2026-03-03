@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang | default("en") }}">
+<html lang="{{ lang | default(" en") }}">
 
 {% include "head.njk" %}
 
@@ -7,6 +7,15 @@
     {% include "navbar.njk" %}
     {{ content | safe }}
     {% include "footer.njk" %}
+    <dialog id="langBanner" class="lang-banner">
+            <div class="banner-content">
+                <p id="lang-banner-text">{{ "banner.text" | localize }}</p>
+                <div class="banner-actions">
+                    <a href="{% if lang == 'en' %}/es/{% else %}/{% endif %}" id="langBannerLink" class="banner-link">{{ "banner.link" | localize }}</a>
+                    <button id="langBannerClose" class="banner-close" aria-label="{{ "banner.close" | localize }}">✕</button>
+                </div>
+            </div>
+    </dialog>
     <script src="/assets/js/main.js" type="module"></script>
 </body>
 

@@ -8,6 +8,12 @@
     "skills": "Habilidades",
     "cv": "CV",
     "about": "Sobre mí",
+    "switcher": {
+      "label": "English",
+      "aria": "Switch to English",
+      "targetUrl": "/",
+      "targetLang": "en"
+    },
     "aria": {
       "toggle_theme": "Alternar tema claro/oscuro",
       "toggle_menu_icon": "Alternar ícono de menú"
@@ -25,76 +31,81 @@
     },
     "scroll_cta": "¡Ver proyectos!"
   },
-    "portfolio": {
-      "title": "Mis proyectos"
-    },
-    "skills": {
-      "title": "Mis habilidades",
-      "frontend": "Frontend",
-      "backend": "Backend",
-      "languages": "Lenguajes",
-      "technologies": "Tecnologías"
-    },
-    "cv": {
-      "name": "Daniela Guardia",
-      "download_pdf": "PDF",
-      "education": "Educación",
-      "experience": "Experiencia",
-      "languages": "Idiomas",
-      "education_list": [
-        {
-          "title": "Full Stack Javascript",
-          "date": "(2024 - 2025)",
-          "institution": "Academia Desafío Latam",
-          "desc": "Completé un programa de especialización centrado en técnicas y tecnologías modernas de desarrollo web con un enfoque de aprendizaje práctico basado en la realización de proyectos."
-        },
-        {
-          "title": "CS50: Introducción a las Ciencias de la Computación",
-          "date": "(2023 - 2024)",
-          "institution": "Universidad de Harvard (Online)",
-          "desc": "Formación sólida en principios fundamentales de ciencias de la computación, incluyendo algoritmos y estructuras de datos, aplicados en proyectos prácticos en C, Python y tecnologías web. Desarrollo de habilidades de resolución de problemas esenciales para construir aplicaciones web eficientes."
-        },
-        {
-          "title": "Bachiller en Lengua Inglesa",
-          "date": "(2015 - 2017)",
-          "institution": "Pontificia Universidad Católica de Valparaíso",
-          "desc": "Programa integral enfocado en lograr un nivel avanzado de lectura, comprensión oral, escritura y expresión oral en lengua inglesa."
-        }
-      ],
-      "experience_list": [
-        {
-          "title": "Traductora Inglés-Español",
-          "date": "(2018 - 2022)",
-          "institution": "Freelance",
-          "desc": "Trabajo independiente como traductora freelance, gestionando múltiples proyectos de traducción de principio a fin. Aprendí a utilizar software de asistencia a la traducción y desarrollé habilidades organizativas para entregar trabajos de alta calidad a tiempo."
-        },
-        {
-          "title": "Traductora voluntaria",
-          "date": "(2017 - 2018)",
-          "institution": "Global Voices ES",
-          "desc": "Contribuí a una comunidad internacional de escritores, traductores y activistas de derechos humanos dedicada a fomentar el entendimiento entre culturas y conectar personas a través de fronteras. Gané experiencia traduciendo artículos y perfeccioné mis habilidades trabajando junto a traductores y editores senior."
-        }
-      ],
-      "lang_list": [
-        { "icon": "emojione--flag-for-chile", "label": "Español: Nativo" },
-        {
-          "icon": "emojione--flag-for-united-states",
-          "label": "Inglés: Avanzado"
-        },
-        { "icon": "emojione--flag-for-japan", "label": "Japonés: Intermedio" }
-      ]
-    },
-    "about": {
-      "title": "Sobre mí",
-      "p1": "¡Te doy la bienvenida! Soy Daniela, desarrolladora web full‑stack con formación en traducción, siempre buscando aprender nuevas tecnologías.",
-      "p2": "Soy optimista y busco crear aplicaciones técnicamente sólidas y accesibles para todas las personas.",
-      "p3": "Actualmente estudio animaciones CSS, accesibilidad y sprites SVG; pronto publicaré más en mi blog.",
-      "p4": "Cuando no estoy programando, dedico mi tiempo a estudiar japonés, tocar guitarra eléctrica y me apasionan los juegos de estrategia y la Fórmula 1."
-    },
+  "portfolio": {
+    "title": "Mis proyectos"
+  },
+  "skills": {
+    "title": "Mis habilidades",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "languages": "Lenguajes",
+    "technologies": "Tecnologías"
+  },
+  "cv": {
+    "name": "Daniela Guardia",
+    "download_pdf": "PDF",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "languages": "Idiomas",
+    "education_list": [
+      {
+        "title": "Full Stack Javascript",
+        "date": "(2024 - 2025)",
+        "institution": "Academia Desafío Latam",
+        "desc": "Completé un programa de especialización centrado en técnicas y tecnologías modernas de desarrollo web con un enfoque de aprendizaje práctico basado en la realización de proyectos."
+      },
+      {
+        "title": "CS50: Introducción a las Ciencias de la Computación",
+        "date": "(2023 - 2024)",
+        "institution": "Universidad de Harvard (Online)",
+        "desc": "Formación sólida en principios fundamentales de ciencias de la computación, incluyendo algoritmos y estructuras de datos, aplicados en proyectos prácticos en C, Python y tecnologías web. Desarrollo de habilidades de resolución de problemas esenciales para construir aplicaciones web eficientes."
+      },
+      {
+        "title": "Bachiller en Lengua Inglesa",
+        "date": "(2015 - 2017)",
+        "institution": "Pontificia Universidad Católica de Valparaíso",
+        "desc": "Programa integral enfocado en lograr un nivel avanzado de lectura, comprensión oral, escritura y expresión oral en lengua inglesa."
+      }
+    ],
+    "experience_list": [
+      {
+        "title": "Traductora Inglés-Español",
+        "date": "(2018 - 2022)",
+        "institution": "Freelance",
+        "desc": "Trabajé de manera independiente como traductora freelance, gestionando múltiples proyectos de traducción de principio a fin. Aprendí a utilizar software de asistencia a la traducción y desarrollé habilidades organizativas para entregar trabajos de alta calidad a tiempo."
+      },
+      {
+        "title": "Traductora voluntaria",
+        "date": "(2017 - 2018)",
+        "institution": "Global Voices ES",
+        "desc": "Contribuí a una comunidad internacional de escritores, traductores y activistas de derechos humanos dedicada a fomentar el entendimiento entre culturas y conectar personas a través de fronteras. Gané experiencia traduciendo artículos y perfeccioné mis habilidades trabajando junto a traductores y editores senior."
+      }
+    ],
+    "lang_list": [
+      { "icon": "emojione--flag-for-chile", "label": "Español: Nativo" },
+      {
+        "icon": "emojione--flag-for-united-states",
+        "label": "Inglés: Avanzado"
+      },
+      { "icon": "emojione--flag-for-japan", "label": "Japonés: Intermedio" }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí",
+    "p1": "¡Te doy la bienvenida! Soy Daniela, desarrolladora web full‑stack con formación en traducción, siempre buscando aprender nuevas tecnologías.",
+    "p2": "Soy optimista y busco crear aplicaciones técnicamente sólidas y accesibles para todas las personas.",
+    "p3": "Actualmente estudio animaciones CSS, accesibilidad y sprites SVG; pronto publicaré más en mi blog.",
+    "p4": "Cuando no estoy programando, dedico mi tiempo a estudiar japonés, tocar guitarra eléctrica y me apasionan los juegos de estrategia y la Fórmula 1."
+  },
   "footer": {
     "github_aria": "Perfil de Github",
     "linkedin_aria": "Perfil de Linkedin",
     "email_aria": "Envíame un correo",
     "text": "© 2026, Daniela Guardia. Construido con 11ty."
+  },
+  "banner": {
+    "text": "This website is also available in English",
+    "link": "Switch",
+    "close": "Close banner"
   }
 }

@@ -2,7 +2,7 @@
   {
     "img_src": "/assets/img/portfolio-d1.jpg",
     "github": "https://github.com/DaniJGP/portfolio",
-    "live": "https://danielajgp.github.io",
+    "live": "https://danijgp.github.io",
     "en": {
       "title": "Portfolio Website",
       "desc": "My personal playground, and the very website you're on! Built from the ground up using only HTML, CSS and vanilla JavaScript, it has taught me robust accessibility features, SVG sprites for scalable icon use, subtle CSS animations.",
@@ -19,7 +19,7 @@
   {
     "img_src": "/assets/img/galeria-d1.jpg",
     "github": "https://github.com/DaniJGP/galeria-arte",
-    "live": "https://galeria-arte.onrender.com/",
+    "live": "https://galeria-arte-82xx.onrender.com/",
     "en": {
       "title": "Galería Arte",
       "desc": "A full-stack art gallery e-commerce web application. It features secure user registration, JWT-secured log-in sessions, shopping cart and buy order processing. It also includes an admin panel for inventory, user order management.",

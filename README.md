@@ -20,7 +20,7 @@
 
 ![Product Name Screen Shot][product-screenshot]
 
-A single-page portfolio website built from scractch using only HTML, CSS and Javascript. It features fade-in on-scroll animations, an SVG spritesheet for every logo used on the page and a mindful approach to keep the site accessible through semanitc labeling.
+A single-page portfolio website built from scratch using only HTML, CSS and Javascript. It features fade-in on-scroll animations, an SVG spritesheet for every logo used on the page and a mindful approach to keep the site accessible through semanitc labeling.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

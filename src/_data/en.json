@@ -102,5 +102,10 @@
     "linkedin_aria": "Linkedin profile",
     "email_aria": "Email me",
     "text": "© 2026, Daniela Guardia. Built with 11ty."
+  },
+  "banner": {
+    "text": "Este sitio web también está disponible en español",
+    "link": "Cambiar",
+    "close": "Cerrar banner"
   }
 }

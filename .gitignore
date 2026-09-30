@@ -1,2 +1,4 @@
 # Don't track 11ty builds
 _site/
+# Node modules
+node_modules/

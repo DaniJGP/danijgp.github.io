@@ -77,32 +77,27 @@ root.style.setProperty('--footer-height', `${footer.offsetHeight}px`);
 
 // Theme toggling
 
-function getUserTheme() {
-  const userTheme = localStorage.getItem('theme');
-  if (!userTheme) {
-    return window.matchMedia('(prefers-color-scheme: dark)').matches
-      ? 'dark'
-      : 'light';
-  }
-  return userTheme;
-}
 
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
 }
 
 function saveTheme(theme) {
-  localStorage.setItem('theme', theme);
+  try {
+    localStorage.setItem('theme', theme);
+  } catch {
+    // The selected theme still applies for this page when storage is unavailable.
+  }
 }
 
 navThemeToggler.addEventListener('click', () => {
-  const currentTheme = document.documentElement.getAttribute('data-theme');
+  const currentTheme = document.documentElement.getAttribute('data-theme') ||
+    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
   applyTheme(newTheme);
   saveTheme(newTheme);
 });
 
-applyTheme(getUserTheme());
 
 // Language detection and setting
 

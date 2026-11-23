@@ -34,13 +34,6 @@
   "portfolio": {
     "title": "Mis proyectos"
   },
-  "skills": {
-    "title": "Mis habilidades",
-    "frontend": "Frontend",
-    "backend": "Backend",
-    "languages": "Lenguajes",
-    "technologies": "Tecnologías"
-  },
   "cv": {
     "name": "Daniela Guardia",
     "download_pdf": "PDF",

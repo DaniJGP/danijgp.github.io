@@ -29,32 +29,33 @@ button {
 
 :root {
   /* Color names */
-  --white: #f8f8f9;
-  --off-white: #e5e5e6;
-  --light-gray: #d7d7d8;
-  --silver: #b0b1b2;
-  --slate-gray: #909192;
-  --steel-gray: #656567;
-  --dark-gray: #424344;
-  --graphite: #303031;
-  --charcoal: #202021;
-  --black: #070708;
+  --neutral-50:  oklch(0.985 0.003 270);
+  --neutral-100: oklch(0.960 0.005 270);
+  --neutral-200: oklch(0.922 0.008 270);
+  --neutral-300: oklch(0.870 0.011 270);
+  --neutral-400: oklch(0.708 0.014 270);
+  --neutral-500: oklch(0.556 0.015 270);
+  --neutral-600: oklch(0.439 0.014 270);
+  --neutral-700: oklch(0.371 0.012 270);
+  --neutral-800: oklch(0.269 0.009 270);
+  --neutral-900: oklch(0.205 0.006 270);
+  --neutral-950: oklch(0.145 0.004 270);
   --slate-blue: #5a4ba8;
   --light-slate-blue: #a18edf;
-  --transparent-white: #ebebeee0;
-  --transparent-black: #202021a0;
-  --transparent-off-white: #efeff3a0;
+  --transparent-white: oklch(0.90 0.012 286 / 0.79);
+  --transparent-black: oklch(0.205 0.006 270 / 0.79);
+  --transparent-off-white: oklch(0.870 0.012 286 / 0.79);
   --white-shadow: #fff2;
   --black-shadow: #0002;
 
   /* Semantic variables*/
-  --background-color-primary: var(--white);
-  --background-color-secondary: var(--off-white);
-  --background-color-tertiary: var(--light-gray);
+  --background-color-primary: var(--neutral-50);
+  --background-color-secondary: var(--neutral-100);
+  --background-color-tertiary: var(--neutral-200);
   --background-transparent: var(--transparent-white);
-  --text-color-primary: var(--charcoal);
-  --text-color-secondary: var(--dark-gray);
-  --text-color-tertiary: var(--steel-gray);
+  --text-color-primary: var(--neutral-900);
+  --text-color-secondary: var(--neutral-700);
+  --text-color-tertiary: var(--neutral-500);
   --accent-color: var(--slate-blue);
   --accent-color-light: var(--light-slate-blue);
   --shadow-color: var(--black-shadow);
@@ -93,13 +94,13 @@ button {
 /* Dark Theme */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color-primary: var(--charcoal);
-    --background-color-secondary: var(--graphite);
-    --background-color-tertiary: var(--dark-gray);
+    --background-color-primary: var(--neutral-900);
+    --background-color-secondary: var(--neutral-800);
+    --background-color-tertiary: var(--neutral-700);
     --background-transparent: var(--transparent-black);
-    --text-color-primary: var(--off-white);
-    --text-color-secondary: var(--light-gray);
-    --text-color-tertiary: var(--silver);
+    --text-color-primary: var(--neutral-100);
+    --text-color-secondary: var(--neutral-200);
+    --text-color-tertiary: var(--neutral-300);
     --accent-color: var(--light-slate-blue);
     --accent-color-light: var(--slate-blue);
     --shadow-color: var(--white-shadow);
@@ -107,26 +108,26 @@ button {
 }
 
 [data-theme='light'] {
-  --background-color-primary: var(--white);
-  --background-color-secondary: var(--off-white);
-  --background-color-tertiary: var(--light-gray);
+  --background-color-primary: var(--neutral-50);
+  --background-color-secondary: var(--neutral-100);
+  --background-color-tertiary: var(--neutral-200);
   --background-transparent: var(--transparent-white);
-  --text-color-primary: var(--charcoal);
-  --text-color-secondary: var(--dark-gray);
-  --text-color-tertiary: var(--steel-gray);
+  --text-color-primary: var(--neutral-900);
+  --text-color-secondary: var(--neutral-700);
+  --text-color-tertiary: var(--neutral-500);
   --accent-color: var(--slate-blue);
   --accent-color-light: var(--light-slate-blue);
   --shadow-color: var(--black-shadow);
 }
 
 [data-theme='dark'] {
-  --background-color-primary: var(--charcoal);
-  --background-color-secondary: var(--graphite);
-  --background-color-tertiary: var(--dark-gray);
+  --background-color-primary: var(--neutral-900);
+  --background-color-secondary: var(--neutral-800);
+  --background-color-tertiary: var(--neutral-700);
   --background-transparent: var(--transparent-black);
-  --text-color-primary: var(--off-white);
-  --text-color-secondary: var(--light-gray);
-  --text-color-tertiary: var(--silver);
+  --text-color-primary: var(--neutral-100);
+  --text-color-secondary: var(--neutral-200);
+  --text-color-tertiary: var(--neutral-300);
   --accent-color: var(--light-slate-blue);
   --accent-color-light: var(--slate-blue);
   --shadow-color: var(--white-shadow);
@@ -221,7 +222,7 @@ h3 {
 .banner-link,
 .banner-close {
   background: var(--slate-blue);
-  color: var(--light-gray);
+  color: var(--neutral-200);
   padding: 8px 12px;
   border-radius: 4px;
   font-weight: 600;
@@ -230,13 +231,13 @@ h3 {
 
 .banner-close {
   background: var(--transparent-black);
-  color: var(--white);
+  color: var(--neutral-50);
 }
 
 .banner-link:hover,
 .banner-close:hover {
   background: var(--light-slate-blue);
-  color: var(--white);
+  color: var(--neutral-50);
 }
 
 
@@ -453,7 +454,6 @@ h3 {
   align-items: center;
   background-color: var(--background-color-primary);
   border: 1px solid var(--background-transparent);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   border-radius: var(--card-border-radius);
   transition:
     box-shadow 200ms ease-in-out,

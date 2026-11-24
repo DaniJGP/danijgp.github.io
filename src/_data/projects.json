@@ -28,9 +28,7 @@
         "React",
         "Node.js",
         "Express.js",
-        "PostgreSQL",
-        "Full-Stack Development",
-        "JWT Authentication"
+        "PostgreSQL"
       ],
       "img_alt": "A website titled Galería Arte, showing colorful art pieces in a grid with their respective names and prices"
     },
@@ -43,8 +41,6 @@
         "Node.js",
         "Express.js",
         "PostgreSQL",
-        "Desarrollo Full-Stack",
-        "Autenticación JWT"
       ],
       "img_alt": "Un sitio web titulado Galería Arte, mostrando obras de arte coloridas en una cuadrícula con sus respectivos nombres y precios"
     }

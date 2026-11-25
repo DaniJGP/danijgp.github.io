@@ -32,7 +32,12 @@
     "scroll_cta": "¡Ver proyectos!"
   },
   "portfolio": {
-    "title": "Mis proyectos"
+    "title": "Mis proyectos",
+    "links": {
+      "project": "Ver proyecto",
+      "source": "Código fuente",
+      "live": "Ver demo"
+    }
   },
   "cv": {
     "name": "Daniela Guardia",

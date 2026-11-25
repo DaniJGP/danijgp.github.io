@@ -4,13 +4,15 @@
     "github": "https://github.com/DaniJGP/portfolio",
     "live": "https://danijgp.github.io",
     "en": {
-      "title": "Portfolio Website",
-      "desc": "This very website! My personal developer portfolio and front-end playground. Built from the ground up to experiment with modern web technologies.",
-      "skills": ["HTML", "CSS", "JavaScript", "11ty"],
-      "img_alt": "Screenshot of the home section of this portfolio website"
+        "title": "Portfolio Website",
+        "slug": "portfolio",
+        "desc": "This very website! My personal developer portfolio and front-end playground. Built from the ground up to experiment with modern web technologies.",
+        "skills": ["HTML", "CSS", "JavaScript", "11ty"],
+        "img_alt": "Screenshot of the home section of this portfolio website"
     },
     "es": {
       "title": "Portafolio web",
+      "slug": "portfolio",
       "desc": "Estás en mi portafolio personal de proyectos de software. Creado desde cero para experimentar y aprender tecnologías web modernas.",
       "skills": ["HTML", "CSS", "JavaScript", "11ty"],
       "img_alt": "Captura de pantalla de la sección de inicio de este sitio web personal"

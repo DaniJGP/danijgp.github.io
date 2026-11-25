@@ -472,8 +472,10 @@ h3 {
 }
 
 .project-image-container {
+  width: 100%;
   aspect-ratio: 3 / 2;
   padding: var(--spacing-m);
+  padding-bottom: 0;
 }
 
 .project-content {
@@ -533,14 +535,14 @@ h3 {
 .project-links {
   flex-grow: 1;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   gap: 8px;
 }
 
 .project-link-button {
   color: var(--text-color-secondary);
-  font-weight: 500;
+  font-weight: 400;
   font-size: var(--step--1);
 
   &:hover {
@@ -549,9 +551,9 @@ h3 {
 }
 
 .project-link-icon {
-  vertical-align: middle;
+  vertical-align: text-bottom;
   aspect-ratio: 1;
-  height: 2.5rem;
+  height: 1.5em;
 }
 
 .section {

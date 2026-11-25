@@ -521,19 +521,13 @@ h3 {
 
 .skill-tag {
   padding: 4px 10px;
-  border-radius: 2px;
+  border-radius: 9999px;
   font-size: var(--step--2);
-  font-weight: 700;
+  font-weight: 400;
   white-space: nowrap;
-  color: var(--background-color-primary);
-  background-color: var(--accent-color);
+  color: var(--text-color-secondary);
+  background-color: var(--background-color-tertiary);
   cursor: default;
-  text-transform: uppercase;
-  transition: transform 0.1s ease-out;
-}
-
-.skill-tag:hover {
-  transform: translateY(-2px);
 }
 
 .project-links {

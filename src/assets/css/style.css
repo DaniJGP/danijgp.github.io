@@ -44,7 +44,6 @@ button {
   --light-slate-blue: #a18edf;
   --transparent-white: oklch(0.90 0.012 286 / 0.79);
   --transparent-black: oklch(0.205 0.006 270 / 0.79);
-  --transparent-off-white: oklch(0.870 0.012 286 / 0.79);
   --white-shadow: #fff2;
   --black-shadow: #0002;
 
@@ -59,7 +58,8 @@ button {
   --accent-color: var(--slate-blue);
   --accent-color-light: var(--light-slate-blue);
   --shadow-color: var(--black-shadow);
-  --card-border-radius: 6px;
+  --border-default: oklch(from var(--text-color-primary) l c h / 0.1);
+  --card-border-radius: 12px;
 
   /* Font sizing */
   /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,20,1.333,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -452,7 +452,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   background-color: var(--background-color-primary);
-  border: 1px solid var(--background-transparent);
+  border: 1px solid var(--border-default);
   border-radius: var(--card-border-radius);
   transition:
     box-shadow 200ms ease-in-out,
@@ -468,13 +468,12 @@ h3 {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  filter: saturate(0.1);
-  transition: filter 200ms ease-in-out;
+  border: 1px solid var(--border-default);
 }
 
 .project-image-container {
-  width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 2;
+  padding: var(--spacing-m);
 }
 
 .project-content {
@@ -810,10 +809,15 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+/* Viewport media queries */
+
+@media (max-width: 1024px) {
   .project-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (max-width: 768px) {
   .section {
     min-height: unset;
   }

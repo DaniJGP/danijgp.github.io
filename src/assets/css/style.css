@@ -573,32 +573,6 @@ h3 {
   gap: var(--spacing-m);
 }
 
-/* Skills section */
-
-#skills {
-  background-color: var(--background-color-primary);
-
-  & svg {
-    height: 3em;
-    width: 3em;
-  }
-}
-
-.skills-grid {
-  /* height: 100%; */
-  display: grid;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-auto-rows: auto;
-  grid-template-areas:
-    'a b c'
-    'a b d';
-  justify-content: center;
-  width: var(--content-width-constrained);
-  gap: 3em;
-  font-size: var(--step--1);
-  color: var(--text-color-secondary);
-}
-
 #frontend-section {
   grid-area: a;
 }

@@ -29,10 +29,10 @@ button {
 
 :root {
   /* Color names */
-  --neutral-50:  oklch(0.985 0.003 270);
-  --neutral-100: oklch(0.960 0.005 270);
+  --neutral-50: oklch(0.985 0.003 270);
+  --neutral-100: oklch(0.96 0.005 270);
   --neutral-200: oklch(0.922 0.008 270);
-  --neutral-300: oklch(0.870 0.011 270);
+  --neutral-300: oklch(0.87 0.011 270);
   --neutral-400: oklch(0.708 0.014 270);
   --neutral-500: oklch(0.556 0.015 270);
   --neutral-600: oklch(0.439 0.014 270);
@@ -42,7 +42,7 @@ button {
   --neutral-950: oklch(0.145 0.004 270);
   --slate-blue: #5a4ba8;
   --light-slate-blue: #a18edf;
-  --transparent-white: oklch(0.90 0.012 286 / 0.79);
+  --transparent-white: oklch(0.9 0.012 286 / 0.79);
   --transparent-black: oklch(0.205 0.006 270 / 0.79);
   --white-shadow: #fff2;
   --black-shadow: #0002;
@@ -59,6 +59,7 @@ button {
   --accent-color-light: var(--light-slate-blue);
   --shadow-color: var(--black-shadow);
   --border-default: oklch(from var(--text-color-primary) l c h / 0.1);
+  --border-subtle: oklch(from var(--text-color-primary) l c h / 0.05);
   --card-border-radius: 12px;
 
   /* Font sizing */
@@ -111,7 +112,7 @@ button {
   }
 }
 
-[data-theme='light'] {
+[data-theme="light"] {
   --background-color-primary: var(--neutral-50);
   --background-color-secondary: var(--neutral-100);
   --background-color-tertiary: var(--neutral-200);
@@ -124,7 +125,7 @@ button {
   --shadow-color: var(--black-shadow);
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --background-color-primary: var(--neutral-900);
   --background-color-secondary: var(--neutral-800);
   --background-color-tertiary: var(--neutral-700);
@@ -149,7 +150,7 @@ html {
 body {
   background-color: var(--background-color-primary);
   color: var(--text-color-primary);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -243,8 +244,6 @@ h3 {
   color: var(--neutral-50);
 }
 
-
-
 /* Navbar */
 
 #navbar {
@@ -293,7 +292,7 @@ h3 {
 }
 
 .navbar-item::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: 9px;
@@ -463,7 +462,6 @@ h3 {
     filter 200ms ease-in-out;
 }
 
-
 .project-card:hover img {
   filter: saturate(1);
 }
@@ -537,30 +535,63 @@ h3 {
 }
 
 .project-links {
-  flex-grow: 1;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: var(--spacing-s);
   display: flex;
   align-items: flex-end;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 8px;
 }
 
 .project-link-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.5em;
-  color: var(--text-color-secondary);
+  gap: 0.25em;
+  color: var(--text-color-tertiary);
   font-weight: 400;
   font-size: var(--step--1);
 
-  &:hover {
-    color: var(--accent-color);
-    text-decoration: underline;
+  .project-link-icon {
+    aspect-ratio: 1;
+    height: var(--icon-md);
+    transition:
+      transform 0.25s ease,
+      color 0.25s ease;
   }
-}
 
-.project-link-icon {
-  aspect-ratio: 1;
-  height: var(--icon-md);
+  .project-link-arrow {
+    transform: translate(-1px,1px);
+    transition:
+      transform 0.25s ease,
+      color 0.25s ease;
+  }
+
+  .project-link-text {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 2px;
+    transition:
+      color 0.25s ease,
+      text-decoration-color 0.25s ease;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--text-color-primary);
+  }
+
+  &:hover .project-link-text {
+    text-decoration-color: var(--text-color-secondary);
+  }
+
+  &:hover .project-link-arrow {
+    transform: translate(1px, -1px);
+  }
+
+  &:hover .project-link-icon {
+    transform: scale(1.05);
+  }
 }
 
 .section {

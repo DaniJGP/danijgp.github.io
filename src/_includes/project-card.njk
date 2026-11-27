@@ -13,13 +13,14 @@
         </div>
         <footer class="project-links">
             <a href="{{ project.live }}" target="_blank" rel="noopener" class="project-link-button">
-                <span>{{ "portfolio.links.live" | localize }} ↗</span>
+                <span class="project-link-text">{{ "portfolio.links.live" | localize }}</span>
+                <span class="project-link-arrow">↗</span>
             </a>
             <a href="{{ project.github }}" target="_blank" rel="noopener" class="project-link-button">
+                <span class="project-link-text">{{ "portfolio.links.source" | localize }}</span>
                 <svg class="project-link-icon" aria-hidden="true">
                     <use href="/assets/icons/icons.svg#coolicons--github" role="img"></use>
-                </svg>
-                <span>{{ "portfolio.links.source" | localize }}</span></a>
+                </svg></a>
         </footer>
     </div>
 </article>

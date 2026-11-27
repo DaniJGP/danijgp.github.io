@@ -85,6 +85,10 @@ button {
   --spacing-s: clamp(0.5rem, 1vw, 0.75rem);
   --icon-sizing-big: clamp(3rem, 2rem + 3vw, 3.75rem);
 
+  --icon-sm: 0.875em;
+  --icon-md: 1em;
+  --icon-lg: 1.25em;
+
   /* Fallback values */
   --navbar-height: 77px;
   --footer-height: 43px;
@@ -535,31 +539,34 @@ h3 {
 .project-links {
   flex-grow: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 8px;
 }
 
 .project-link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
   color: var(--text-color-secondary);
   font-weight: 400;
   font-size: var(--step--1);
 
   &:hover {
     color: var(--accent-color);
+    text-decoration: underline;
   }
 }
 
 .project-link-icon {
-  vertical-align: text-bottom;
   aspect-ratio: 1;
-  height: 1.5em;
+  height: var(--icon-md);
 }
 
 .section {
   scroll-snap-align: start;
   min-height: 100svh;
-  width: 100vw;
+
   overflow: hidden;
   display: flex;
   justify-content: flex-start;

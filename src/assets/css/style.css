@@ -5,8 +5,8 @@
   padding: 0;
   /* Makes theme transition smoothly */
   transition:
-    background-color 0.3s ease-in-out,
-    color 0.3s ease-in-out;
+    background-color 250ms ease-in-out,
+    color 250ms ease-in-out;
 }
 
 *,
@@ -471,6 +471,7 @@ h3 {
   width: 100%;
   object-fit: cover;
   border: 1px solid var(--border-default);
+  border-radius: 4px;
 }
 
 .project-image-container {
@@ -589,9 +590,6 @@ h3 {
     transform: translate(1px, -1px);
   }
 
-  &:hover .project-link-icon {
-    transform: scale(1.05);
-  }
 }
 
 .section {

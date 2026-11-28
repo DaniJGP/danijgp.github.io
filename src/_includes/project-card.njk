@@ -3,26 +3,24 @@
             alt="{{ project[lang].img_alt }}"></div>
     <div class="project-content">
         <h3 class="project-title">{{ project[lang].title }}</h3>
-        <div class="project-desc">
-            <p>{{ project[lang].desc }}</p>
-        </div>
         <div class="project-skills">
         {% for skill in project[lang].skills %}
              <span class="skill-tag">{{ skill }}</span>
         {% endfor %}
         </div>
+        <div class="project-desc">
+            <p>{{ project[lang].desc }}</p>
+        </div>
         <footer class="project-links">
             <a href="{{ project.live }}" target="_blank" rel="noopener" class="project-link-button">
-                <svg class="project-link-icon" aria-hidden="true">
-                    <use href="/assets/icons/icons.svg#ic--outline-play-circle" role="img"></use>
-                </svg>
-                <span>DEMO</span>
+                <span class="project-link-text">{{ "portfolio.links.live" | localize }}</span>
+                <span class="project-link-arrow">↗</span>
             </a>
             <a href="{{ project.github }}" target="_blank" rel="noopener" class="project-link-button">
+                <span class="project-link-text">{{ "portfolio.links.source" | localize }}</span>
                 <svg class="project-link-icon" aria-hidden="true">
-                    <use href="/assets/icons/icons.svg#mdi--github" role="img"></use>
-                </svg>
-                <span>GITHUB</span></a>
+                    <use href="/assets/icons/icons.svg#coolicons--github" role="img"></use>
+                </svg></a>
         </footer>
     </div>
 </article>
